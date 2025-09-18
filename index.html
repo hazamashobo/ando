@@ -265,10 +265,12 @@
             <h1>狭間書房</h1>
             <p class="subtitle">Hazama Publishing</p>
         </div>
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="キーワード入力">
-            <button onclick="searchSite()">検索</button>
-        </div>
+       <div class="search">
+      <form action="https://hazamashobo.github.io/result/" method="get">
+        <input type="text" id="searchInput" name="q" placeholder="キーワード入力">
+        <button type="submit">検索</button>
+      </form>
+    </div>
     </header>
     <nav>
         <a href="index.html">ホーム</a>
@@ -277,7 +279,7 @@
         <a href="#">お問い合わせ</a>
     </nav>
     <div class="container">
-        <div class="employee-number">社員番号：000-00000</div>
+        <div class="employee-number">社員番号：HS0007</div>
         <div class="content">
             <div class="document-header">
                 <h2>社員個人情報管理台帳</h2>
@@ -288,13 +290,13 @@
                         <div class="field-group">
                             <div class="field-label">氏名</div>
                             <div class="field-value">
-                                <span class="furigana">あんどう　れいか</span>
-                                <span class="main-name">安藤　玲香</span>
+                                <span class="furigana">おおぶち　こうや</span>
+                                <span class="main-name">大渕　航也</span>
                             </div>
                         </div>
                     </div>
                     <div class="photo-container">
-                    <img src="gazou/ando.png" alt="安藤玲香 証明写真" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="gazou/obuchi.png" alt="大渕こうや 証明写真" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -302,11 +304,11 @@
                 <div class="section-title">基本情報</div>
                 <div class="field-group">
                     <div class="field-label">生年月日</div>
-                    <div class="field-value">昭和54年（1965年）11月30日</div>
+                    <div class="field-value">昭和54年（1992年）07月25日</div>
                 </div>
                 <div class="field-group">
                     <div class="field-label">性別</div>
-                    <div class="field-value">女性</div>
+                    <div class="field-value">男性</div>
                 </div>
                 <div class="field-group">
                     <div class="field-label">住所</div>
@@ -321,7 +323,7 @@
                 </div>
                 <div class="field-group">
                     <div class="field-label">役職</div>
-                    <div class="field-value">-</div>
+                    <div class="field-value">1on1担当</div>
                 </div>
                 <div class="field-group">
                     <div class="field-label">雇用形態</div>
@@ -336,10 +338,6 @@
                 <div class="career-item">平成19年　帰国後フリーのグラフィックデザイナー</div>
                 <div class="career-item">平成21年　狭間書房 入社、写真集・画集の編集を担当</div>
                 <div class="career-item">現在に至る</div>
-                <p> </p>
-                <p> </p>
-                <p> </p>
-                <div class="career-item">★「文芸出版」については別記事を参照。</div>
             </div>
             <div class="reference-note">
                 【社外秘】この情報は機密扱いとし、関係者以外への開示を禁ずる
@@ -349,19 +347,6 @@
     <footer>
         <p>© 2025 狭間書房</p>
     </footer>
-    <script>
-        // 検索機能
-        const hiddenKeywords = [
-            {keyword: "社員名簿", url: "https://hazamashobo.github.io/meibo/"},
-            {keyword: "テスト", url: "https://www.youtube.com/watch?v=W3oN4-NVvhc"}
-        ];
-        function searchSite() {
-            const input = document.getElementById('searchInput').value.trim();
-            if(!input) return;
-            const found = hiddenKeywords.find(k=>k.keyword===input);
-            if(found) location.href = found.url;
-        }
-    </script>
 </body>
 </html>
         </div>
